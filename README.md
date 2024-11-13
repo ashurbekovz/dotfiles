@@ -1,7 +1,7 @@
-# My neovim config
+# dotfiles
 
-The config for neovim that I use for my daily tasks.
+Configs that I use for my daily tasks.
 
 ## How to use
 
-After installing neovim, just copy these files to the `.config/nvim` directory
+Just copy these repo to the `~/.config` directory.

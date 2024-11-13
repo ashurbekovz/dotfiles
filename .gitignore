@@ -1,1 +1,7 @@
-plugin
+/*
+!.gitignore
+!README.md
+!makefile
+!/nvim
+!/nvim/**
+nvim/plugin/
