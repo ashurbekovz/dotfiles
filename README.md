@@ -10,7 +10,7 @@ Configs that I use for my daily tasks.
 
 1) Copy repo to home directory.
 2) Use make.
-3) `stew .`.
+3) `stow .`.
 
 ## Nvim 
 
