@@ -4,7 +4,7 @@ Configs that I use for my daily tasks.
 
 ## Prerequisites
 
-- [Nerd fonts](https://www.nerdfonts.com/)
+- [Nerd fonts](https://www.nerdfonts.com/) (or [Jetbrains Mono](https://www.jetbrains.com/lp/mono/))
 
 ## How to use
 
