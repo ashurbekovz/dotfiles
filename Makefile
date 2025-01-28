@@ -7,4 +7,6 @@ macos_install:
 	brew install ripgrep
 	brew install tmux
 	brew install neovim
+        brew install --cask font-jetbrains-mono-nerd-font
 	brew install --cask nikitabobko/tap/aerospace
+	brew install --cask alacritty

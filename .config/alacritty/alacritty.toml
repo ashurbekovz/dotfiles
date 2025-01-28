@@ -1,0 +1,8 @@
+# Alacritty Configuration File (TOML format)
+
+[font]
+# Font family and size
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+size = 18.0
