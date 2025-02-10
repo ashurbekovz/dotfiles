@@ -11,6 +11,7 @@ macos_install:
 	brew install --cask font-jetbrains-mono-nerd-font
 	brew install --cask nikitabobko/tap/aerospace
 	brew install --cask alacritty
+	brew install jandedobbeleer/oh-my-posh/oh-my-posh
 
 install_langs:
 	brew install go@1.22
