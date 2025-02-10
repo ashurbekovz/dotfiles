@@ -38,7 +38,7 @@ return {
         build = ":MasonUpdate",
     },
 
-    {
-        "williamboman/mason-lspconfig.nvim"
-    }
+    "williamboman/mason-lspconfig.nvim",
+
+    "christoomey/vim-tmux-navigator"
 }
