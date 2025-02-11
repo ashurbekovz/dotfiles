@@ -1,5 +1,9 @@
 # Alacritty Configuration File (TOML format)
 
+general.import = [
+    "~/.config/alacritty/catppuccin-mocha.toml"
+]
+
 [font]
 # Font family and size
 normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
