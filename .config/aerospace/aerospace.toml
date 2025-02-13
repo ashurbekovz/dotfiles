@@ -100,8 +100,8 @@ automatically-unhide-macos-hidden-apps = false
     alt-slash = 'layout tiles horizontal vertical'
     alt-comma = 'layout accordion horizontal vertical'
 
-    alt-h = 'workspace prev'
-    alt-l = 'workspace next'
+    alt-p = 'workspace prev'
+    alt-n = 'workspace next'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move
     alt-shift-h = 'move left'
