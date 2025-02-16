@@ -12,6 +12,9 @@ macos_install:
 	brew install --cask nikitabobko/tap/aerospace
 	brew install --cask alacritty
 	brew install jandedobbeleer/oh-my-posh/oh-my-posh
+	brew install wget
+	brew install bat
+	brew install fzf
 
 install_langs:
 	brew install go@1.22
