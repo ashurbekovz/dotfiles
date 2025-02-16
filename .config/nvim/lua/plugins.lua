@@ -57,5 +57,14 @@ return {
             })
             vim.cmd.colorscheme "catppuccin"
         end
+    },
+
+
+    {
+        'ibhagwan/fzf-lua',
+        requires = { 'nvim-tree/nvim-web-devicons' },
+        config = function()
+            require("fzf")
+        end
     }
 }

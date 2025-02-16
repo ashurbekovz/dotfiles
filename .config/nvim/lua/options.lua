@@ -39,3 +39,6 @@ vim.opt.cmdheight = 0
 vim.g.netrw_banner = 0
 
 vim.opt.termguicolors = true
+
+vim.g.netrw_fastbrowse = 0
+
