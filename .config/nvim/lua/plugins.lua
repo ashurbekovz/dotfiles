@@ -66,5 +66,9 @@ return {
         config = function()
             require("fzf")
         end
-    }
+    },
+
+    {
+        'mbbill/undotree',
+    },
 }
