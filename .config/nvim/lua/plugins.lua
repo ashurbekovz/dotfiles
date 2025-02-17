@@ -71,4 +71,14 @@ return {
     {
         'mbbill/undotree',
     },
+
+    {
+        'nvim-tree/nvim-tree.lua',
+        dependencies = {
+            'nvim-tree/nvim-web-devicons',
+        },
+        config = function()
+            require("nvimtree")
+        end
+    },
 }
