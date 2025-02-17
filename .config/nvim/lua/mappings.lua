@@ -14,3 +14,14 @@ map('n', '<leader>fb', "<cmd>FzfLua buffers<CR>")
 map('n', '<leader>u', vim.cmd.UndotreeToggle)
 
 map('n', '<C-n>', ':NvimTreeToggle<CR>')
+
+local harpoon = require("harpoon")
+harpoon:setup()
+
+map("n", "<leader>a", function() harpoon:list():add() end)
+map("n", "<C-e>", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
+
+map("n", "<leader>j1", function() harpoon:list():select(1) end)
+map("n", "<leader>j2", function() harpoon:list():select(2) end)
+map("n", "<leader>j3", function() harpoon:list():select(3) end)
+map("n", "<leader>j4", function() harpoon:list():select(4) end)

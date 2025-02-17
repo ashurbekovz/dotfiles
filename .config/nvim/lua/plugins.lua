@@ -88,5 +88,11 @@ return {
         config = function()
             require("lualine_config")
         end
+    },
+
+    {
+        "ThePrimeagen/harpoon",
+        branch = "harpoon2",
+        dependencies = { "nvim-lua/plenary.nvim" }
     }
 }
