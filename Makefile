@@ -17,5 +17,5 @@ macos_install:
 	brew install fzf
 
 install_langs:
-	brew install go@1.22
+	brew install go@1.24
 	brew install npm
