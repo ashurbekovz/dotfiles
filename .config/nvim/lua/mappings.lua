@@ -25,3 +25,5 @@ map("n", "<leader>j1", function() harpoon:list():select(1) end)
 map("n", "<leader>j2", function() harpoon:list():select(2) end)
 map("n", "<leader>j3", function() harpoon:list():select(3) end)
 map("n", "<leader>j4", function() harpoon:list():select(4) end)
+
+map("n", "<leader>r", vim.lsp.buf.rename)
