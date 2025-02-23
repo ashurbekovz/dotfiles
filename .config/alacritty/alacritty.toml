@@ -11,10 +11,5 @@ bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
 italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
 size = 18.0
 
-[keyboard]
-bindings = [
-  { key = "V", mods = "Alt", action = "ToggleViMode" }
-]
-
 [scrolling]
 history = 100000
