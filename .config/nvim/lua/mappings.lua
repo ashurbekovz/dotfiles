@@ -27,6 +27,8 @@ map("n", "<leader>j2", function() harpoon:list():select(2) end)
 map("n", "<leader>j3", function() harpoon:list():select(3) end)
 map("n", "<leader>j4", function() harpoon:list():select(4) end)
 
+map("n", "<leader>sd", vim.diagnostic.open_float)
+
 map("n", "<leader>r", vim.lsp.buf.rename)
 map("n", "gd", vim.lsp.buf.definition)
 map("n", "gD", vim.lsp.buf.declaration)
