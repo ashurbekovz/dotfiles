@@ -1,5 +1,7 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+setopt share_history
+
 export PATH="/opt/homebrew/opt/go@1.24/bin:$PATH"
 
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
