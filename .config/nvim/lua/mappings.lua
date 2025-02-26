@@ -14,6 +14,7 @@ map("n", "<leader>fb", "<cmd>FzfLua buffers<CR>")
 map("n", "<leader>u", vim.cmd.UndotreeToggle)
 
 map("n", "<C-n>", ":NvimTreeToggle<CR>")
+map('n', '<leader>e', ':NvimTreeFindFile<CR>')
 
 local harpoon = require("harpoon")
 harpoon:setup()
