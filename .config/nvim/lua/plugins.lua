@@ -99,38 +99,5 @@ return {
     {
         'MeanderingProgrammer/render-markdown.nvim',
         dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' },
-        opts = {
-            file_types = { "markdown", "Avante" },
-        },
-        ft = { "markdown", "Avante" },
     },
-
-    {
-        "yetone/avante.nvim",
-        event = "VeryLazy",
-        lazy = false,
-        version = false,
-        opts = {
-            provider = "openai",
-            openai = {
-                endpoint = "https://api.vsegpt.ru/v1",
-                model = "google/gemini-2.0-flash-lite-001",
-                timeout = 10000,
-                temperature = 0.1,
-                max_tokens = 4096,
-            },
-        },
-        build = "make",
-        dependencies = {
-            "nvim-treesitter/nvim-treesitter",
-            "stevearc/dressing.nvim",
-            "nvim-lua/plenary.nvim",
-            "MunifTanjim/nui.nvim",
-            --- The below dependencies are optional,
-            "hrsh7th/nvim-cmp",
-            "ibhagwan/fzf-lua",
-            "nvim-tree/nvim-web-devicons",
-            'MeanderingProgrammer/render-markdown.nvim',
-        },
-    }
 }
