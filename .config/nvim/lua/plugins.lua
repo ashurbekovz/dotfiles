@@ -101,17 +101,4 @@ return {
         'MeanderingProgrammer/render-markdown.nvim',
         dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' },
     },
-
-    {
-        "dlants/magenta.nvim",
-        lazy = false,
-        build = "npm install --frozen-lockfile",
-        opts = {
-            sidebar_position="right",
-            provider = "openai",
-            openai = {
-                model = "qwen2.5-coder:32b"
-            }
-        },
-    },
 }
