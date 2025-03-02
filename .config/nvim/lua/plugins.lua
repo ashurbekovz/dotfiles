@@ -62,7 +62,7 @@ return {
 
     {
         'ibhagwan/fzf-lua',
-        requires = { 'nvim-tree/nvim-web-devicons' },
+        dependencies = { 'nvim-tree/nvim-web-devicons' },
         config = function()
             require("fzf")
         end
@@ -114,7 +114,7 @@ return {
             provider = "openai",
             openai = {
                 endpoint = "https://api.vsegpt.ru/v1",
-                model = "anthropic/claude-3.7-sonnet",
+                model = "google/gemini-2.0-flash-lite-001",
                 timeout = 10000,
                 temperature = 0.1,
                 max_tokens = 4096,
