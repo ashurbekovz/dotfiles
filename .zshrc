@@ -1,5 +1,6 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+
 setopt share_history
 
 export PATH="/opt/homebrew/opt/go@1.24/bin:$PATH"
@@ -30,5 +31,9 @@ function ctrl_f_search() {
 }
 zle -N ctrl_f_search
 bindkey '^F' ctrl_f_search
+
+if [ -f ~/.private_env ]; then
+    source ~/.private_env
+fi
 
 eval "$(oh-my-posh init zsh)"
