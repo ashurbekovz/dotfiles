@@ -101,4 +101,12 @@ return {
         'MeanderingProgrammer/render-markdown.nvim',
         dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' },
     },
+
+    {
+        'tzachar/cmp-ai',
+        dependencies = 'nvim-lua/plenary.nvim',
+        config = function()
+            require("cmp_ai_config")
+        end
+    },
 }

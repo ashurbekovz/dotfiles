@@ -16,6 +16,9 @@ macos_install:
 	brew install bat
 	brew install fzf
 
+start_tabby:
+	tabby serve --device metal
+
 install_langs:
 	brew install go@1.24
 	brew install golangci-lint
