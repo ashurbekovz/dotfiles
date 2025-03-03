@@ -1,2 +1,2 @@
 [model.completion.local]
-model_id = "Qwen2.5-Coder-3B"
+model_id = "Qwen2.5-Coder-1.5B"
