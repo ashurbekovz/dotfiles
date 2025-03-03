@@ -1,5 +1,4 @@
 local cmp = require("cmp")
-local compare = require('cmp.config.compare')
 
 cmp.setup({
     mapping = cmp.mapping.preset.insert({
@@ -7,15 +6,18 @@ cmp.setup({
         ["<CR>"] = cmp.mapping.confirm({ select = true }),
         ["<Tab>"] = cmp.mapping.select_next_item(),
         ["<S-Tab>"] = cmp.mapping.select_prev_item(),
-        ['<C-x>'] = cmp.mapping(
+        ["<C-x>"] = cmp.mapping(
             cmp.mapping.complete({
                 config = {
                     sources = cmp.config.sources({
-                        { name = 'cmp_ai' },
+                        { name = "cmp_ai" },
                     }),
+                    completion = {
+                        completeopt = "preview"
+                    },
                 },
             }),
-            { 'i' }
+            { "i" }
         ),
     }),
 
@@ -24,19 +26,4 @@ cmp.setup({
         { name = "buffer" },
         { name = "path" },
     }),
-
-    sorting = {
-        priority_weight = 2,
-        comparators = {
-            require('cmp_ai.compare'),
-            compare.offset,
-            compare.exact,
-            compare.score,
-            compare.recently_used,
-            compare.kind,
-            compare.sort_text,
-            compare.length,
-            compare.order,
-        },
-    },
 })
