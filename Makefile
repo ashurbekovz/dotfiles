@@ -15,6 +15,7 @@ macos_install:
 	brew install wget
 	brew install bat
 	brew install fzf
+	brew install repomix
 
 start_tabby:
 	tabby serve --device metal
