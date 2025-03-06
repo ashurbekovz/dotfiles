@@ -1,6 +1,7 @@
-git_authorize:
+git:
 	git config --global user.name "Zamir Ashurbekov"
 	git config --global user.email "derbent_21@outlook.com"
+	git config --global core.editor "nvim"
 
 macos_install:
 	make install_langs
