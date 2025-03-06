@@ -49,3 +49,6 @@ map("n", "<leader>=", vim.lsp.buf.format)
 map("n", "<leader>af", vim.lsp.buf.code_action)
 map("n", "<leader>ai", vim.lsp.buf.incoming_calls)
 map("n", "<leader>ao", vim.lsp.buf.outgoing_calls)
+
+map("n", "<leader>cd", "<cmd>BufferConflictDiff<cr>")
+map("n", "<leader>cl", "<cmd>BufferConflictList<cr>")

@@ -1,5 +1,10 @@
 return {
     {
+        "nvim-lua/plenary.nvim",
+        lazy = false, -- Убедитесь, что он загружается сразу
+    },
+
+    {
         "hrsh7th/nvim-cmp",
         dependencies = {
             "hrsh7th/cmp-nvim-lsp",
@@ -109,4 +114,8 @@ return {
             require("cmp_ai_config")
         end
     },
+
+    {
+        "ashurbekovz/buffer-conflict.nvim",
+    }
 }
