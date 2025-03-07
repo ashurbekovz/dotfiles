@@ -3,21 +3,32 @@ require("nvim-tree").setup({
         sorter = "case_sensitive",
     },
     view = {
-        width = 30,
+        width = 35,
     },
     renderer = {
-        highlight_git = true,
+        special_files = {},
+        highlight_modified = "name",
         icons = {
             show = {
                 file = true,
                 folder = true,
                 git = false,
+                modified = false,
             },
         },
     },
-    git = {
+    update_focused_file = {
         enable = true,
-        ignore = false,
+        update_root = {
+            enable = false,
+            ignore_list = {},
+        },
+    },
+    modified = {
+        enable = true,
+    },
+    git = {
+        enable = false,
     },
     filters = {
         dotfiles = false,
