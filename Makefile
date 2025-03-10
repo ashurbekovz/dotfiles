@@ -25,3 +25,4 @@ install_langs:
 	brew install go@1.24
 	brew install golangci-lint
 	brew install npm
+	brew install python3
