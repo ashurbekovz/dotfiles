@@ -1,0 +1,4 @@
+# rename this file to .private_env and fill in the blanks
+export OLLAMA_API_BASE=http://127.0.0.1:11434
+export OLLAMA_KEEP_ALIVE=-1
+export TABBY_API_KEY=""
