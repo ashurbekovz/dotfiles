@@ -52,3 +52,5 @@ map("n", "<leader>ao", vim.lsp.buf.outgoing_calls)
 
 map("n", "<leader>cd", "<cmd>BufferConflictDiff<cr>")
 map("n", "<leader>cl", "<cmd>BufferConflictList<cr>")
+
+map("n", "<leader>tc", "<cmd>NvimTreeCollapse<CR>")
