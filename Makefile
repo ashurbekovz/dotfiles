@@ -17,6 +17,7 @@ macos_install:
 	brew install bat
 	brew install fzf
 	brew install repomix
+	make install_nix
 
 start_tabby:
 	tabby serve --device metal
@@ -27,3 +28,6 @@ install_langs:
 	brew install npm
 	brew install python3
 	brew install llvm
+
+install_nix:
+	sh <(curl -L https://nixos.org/nix/install) --yes
