@@ -14,4 +14,5 @@ require "lsp"
 
 vim.schedule(function()
   require "mappings"
+  require "autocmds"
 end)
