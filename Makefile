@@ -1,6 +1,6 @@
 git:
 	git config --global user.name "Zamir Ashurbekov"
-	git config --global user.email "derbent_21@outlook.com"
+	git config --global user.email "ashurbekovz23@gmail.com"
 	git config --global core.editor "nvim"
 
 macos_install:
@@ -17,6 +17,7 @@ macos_install:
 	brew install bat
 	brew install fzf
 	brew install repomix
+	brew install lazygit
 	make install_nix
 
 start_tabby:
