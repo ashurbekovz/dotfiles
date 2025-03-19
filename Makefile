@@ -1,7 +1,6 @@
 git:
 	git config --global user.name "Zamir Ashurbekov"
 	git config --global user.email "ashurbekovz23@gmail.com"
-	git config --global core.editor "nvim"
 
 macos_install:
 	make install_langs
