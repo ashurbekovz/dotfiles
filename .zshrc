@@ -36,3 +36,6 @@ bindkey '^F' ctrl_f_search
 
 
 eval "$(oh-my-posh init zsh)"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/zamir/.lmstudio/bin"

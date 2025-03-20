@@ -66,21 +66,21 @@ return {
 
 
     {
-        'ibhagwan/fzf-lua',
-        dependencies = { 'nvim-tree/nvim-web-devicons' },
+        "ibhagwan/fzf-lua",
+        dependencies = { "nvim-tree/nvim-web-devicons" },
         config = function()
             require("fzf")
         end
     },
 
     {
-        'mbbill/undotree',
+        "mbbill/undotree",
     },
 
     {
-        'nvim-tree/nvim-tree.lua',
+        "nvim-tree/nvim-tree.lua",
         dependencies = {
-            'nvim-tree/nvim-web-devicons',
+            "nvim-tree/nvim-web-devicons",
         },
         config = function()
             require("nvimtree")
@@ -88,8 +88,8 @@ return {
     },
 
     {
-        'nvim-lualine/lualine.nvim',
-        dependencies = { 'nvim-tree/nvim-web-devicons' },
+        "nvim-lualine/lualine.nvim",
+        dependencies = { "nvim-tree/nvim-web-devicons" },
         config = function()
             require("lualine_config")
             require("fzf-lua").register_ui_select()
@@ -103,13 +103,13 @@ return {
     },
 
     {
-        'MeanderingProgrammer/render-markdown.nvim',
-        dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' },
+        "MeanderingProgrammer/render-markdown.nvim",
+        dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-tree/nvim-web-devicons" },
     },
 
     {
-        'tzachar/cmp-ai',
-        dependencies = 'nvim-lua/plenary.nvim',
+        "tzachar/cmp-ai",
+        dependencies = "nvim-lua/plenary.nvim",
         config = function()
             require("cmp_ai_config")
         end
@@ -117,5 +117,12 @@ return {
 
     {
         "ashurbekovz/buffer-conflict.nvim",
+    },
+
+    {
+        "mhartington/formatter.nvim",
+        config = function()
+            require("formatter_config")
+        end
     }
 }
