@@ -108,14 +108,6 @@ return {
     },
 
     {
-        "tzachar/cmp-ai",
-        dependencies = "nvim-lua/plenary.nvim",
-        config = function()
-            require("cmp_ai_config")
-        end
-    },
-
-    {
         "ashurbekovz/buffer-conflict.nvim",
     },
 
