@@ -1,6 +1,13 @@
 local cmp = require("cmp")
+local luasnip = require("luasnip")
 
 cmp.setup({
+    snippet = {
+        expand = function(args)
+            luasnip.lsp_expand(args.body)
+        end
+    },
+
     mapping = cmp.mapping.preset.insert({
         ["<C-s>"] = cmp.mapping.complete(),
         ["<CR>"] = cmp.mapping.confirm({ select = true }),
@@ -9,6 +16,7 @@ cmp.setup({
     }),
 
     sources = cmp.config.sources({
+        { name = "luasnip" },
         { name = "nvim_lsp" },
         { name = "buffer" },
         { name = "path" },

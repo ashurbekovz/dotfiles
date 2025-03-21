@@ -107,14 +107,25 @@ return {
         dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-tree/nvim-web-devicons" },
     },
 
-    {
-        "ashurbekovz/buffer-conflict.nvim",
-    },
+    -- {
+    --     "ashurbekovz/buffer-conflict.nvim",
+    -- },
 
     {
         "mhartington/formatter.nvim",
         config = function()
             require("formatter_config")
         end
-    }
+    },
+
+    {
+        "L3MON4D3/LuaSnip",
+        version = "v2.*",
+        dependencies = {
+            "saadparwaiz1/cmp_luasnip",
+        },
+        config = function()
+            require("luasnip_config")
+        end
+    },
 }
