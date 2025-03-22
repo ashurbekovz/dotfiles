@@ -1,5 +1,12 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+export HISTSIZE=100000
+export SAVEHIST=100000
+export HISTFILE=~/.zhistory
+setopt INC_APPEND_HISTORY
+setopt HIST_IGNORE_DUPS
+setopt EXTENDED_HISTORY
+
 source ~/.public_env
 if [ -f ~/.private_env ]; then
     source ~/.private_env
