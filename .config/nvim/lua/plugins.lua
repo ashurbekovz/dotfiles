@@ -15,7 +15,7 @@ return {
             "saadparwaiz1/cmp_luasnip"
         },
         config = function()
-            require("configs/cmp_config")
+            require("configs/cmp")
         end
     },
 
@@ -91,7 +91,7 @@ return {
         "nvim-lualine/lualine.nvim",
         dependencies = { "nvim-tree/nvim-web-devicons" },
         config = function()
-            require("configs/lualine_config")
+            require("configs/lualine")
             require("fzf-lua").register_ui_select()
         end
     },
@@ -110,7 +110,7 @@ return {
     {
         "mhartington/formatter.nvim",
         config = function()
-            require("configs/formatter_config")
+            require("configs/formatter")
         end
     },
 
@@ -121,7 +121,7 @@ return {
             "saadparwaiz1/cmp_luasnip",
         },
         config = function()
-            require("configs/luasnip_config")
+            require("configs/luasnip")
         end
     },
 }
