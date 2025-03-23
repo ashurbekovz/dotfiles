@@ -107,10 +107,6 @@ return {
         dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-tree/nvim-web-devicons" },
     },
 
-    -- {
-    --     "ashurbekovz/buffer-conflict.nvim",
-    -- },
-
     {
         "mhartington/formatter.nvim",
         config = function()
