@@ -1,7 +1,7 @@
 return {
     {
         "nvim-lua/plenary.nvim",
-        lazy = false, -- Убедитесь, что он загружается сразу
+        lazy = false,
     },
 
     {
@@ -15,7 +15,7 @@ return {
             "saadparwaiz1/cmp_luasnip"
         },
         config = function()
-            require("cmp_config")
+            require("configs/cmp_config")
         end
     },
 
@@ -23,14 +23,14 @@ return {
         "nvim-treesitter/nvim-treesitter",
         build = ":TSUpdate",
         config = function()
-            require("treesitter")
+            require("configs/treesitter")
         end,
     },
 
     {
         "neovim/nvim-lspconfig",
         config = function()
-            require("lsp")
+            require("configs/lsp")
         end
     },
 
@@ -69,7 +69,7 @@ return {
         "ibhagwan/fzf-lua",
         dependencies = { "nvim-tree/nvim-web-devicons" },
         config = function()
-            require("fzf")
+            require("configs/fzf")
         end
     },
 
@@ -83,7 +83,7 @@ return {
             "nvim-tree/nvim-web-devicons",
         },
         config = function()
-            require("nvimtree")
+            require("configs/nvimtree")
         end
     },
 
@@ -91,7 +91,7 @@ return {
         "nvim-lualine/lualine.nvim",
         dependencies = { "nvim-tree/nvim-web-devicons" },
         config = function()
-            require("lualine_config")
+            require("configs/lualine_config")
             require("fzf-lua").register_ui_select()
         end
     },
@@ -110,7 +110,7 @@ return {
     {
         "mhartington/formatter.nvim",
         config = function()
-            require("formatter_config")
+            require("configs/formatter_config")
         end
     },
 
@@ -121,7 +121,7 @@ return {
             "saadparwaiz1/cmp_luasnip",
         },
         config = function()
-            require("luasnip_config")
+            require("configs/luasnip_config")
         end
     },
 }

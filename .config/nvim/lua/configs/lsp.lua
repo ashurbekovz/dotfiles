@@ -5,15 +5,15 @@ local cmp_nvim_lsp = require("cmp_nvim_lsp")
 
 mason.setup()
 mason_lspconfig.setup({
-  ensure_installed = { 'gopls', 'pyright', 'clangd', 'lua_ls' },
+    ensure_installed = { 'gopls', 'pyright', 'clangd', 'lua_ls' },
 })
 
 mason_lspconfig.setup_handlers({
-  function(server_name)
-    lspconfig[server_name].setup({
-      capabilities = require('cmp_nvim_lsp').default_capabilities(),
-    })
-  end,
+    function(server_name)
+        lspconfig[server_name].setup({
+            capabilities = require('cmp_nvim_lsp').default_capabilities(),
+        })
+    end,
 })
 
 local capabilities = cmp_nvim_lsp.default_capabilities()
