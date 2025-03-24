@@ -7,6 +7,8 @@ setopt INC_APPEND_HISTORY
 setopt HIST_IGNORE_DUPS
 setopt EXTENDED_HISTORY
 
+alias n='nvim'
+
 source ~/.public_env
 if [ -f ~/.private_env ]; then
     source ~/.private_env
