@@ -112,4 +112,14 @@ return {
             require("configs/luasnip")
         end
     },
+
+    {
+        'milanglacier/minuet-ai.nvim',
+        config = function()
+            require('configs/minuet')
+        end,
+        dependencies = {
+            'nvim-lua/plenary.nvim',
+        }
+    },
 }
