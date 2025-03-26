@@ -128,9 +128,13 @@ return {
         dependencies = {
             "nvim-lua/plenary.nvim",
             "nvim-treesitter/nvim-treesitter",
+            "nvim-lualine/lualine.nvim",
         },
         config = function()
             require("configs/codecompanion")
-        end
+        end,
+        init = function()
+            require("configs/lualine_codecompanion").init()
+        end,
     }
 }
