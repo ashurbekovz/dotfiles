@@ -4,7 +4,7 @@ require('minuet').setup{
         openai_compatible = {
             api_key = 'TERM',
             end_point = 'http://127.0.0.1:1234/v1/chat/completions',
-            model = 'gemma-3-4b-it',
+            model = 'gemma-3-12b-it',
             name = 'lmstudio',
             stream = true,
             optional = {
@@ -21,7 +21,7 @@ require('minuet').setup{
     virtualtext = {
         auto_trigger_ignore_ft = { '*' },
         keymap = {
-            accept = '<CR>',
+            accept = '<C-a>',
             next = '<C-x>',
             dismiss = '<C-q>',
         },

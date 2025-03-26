@@ -114,12 +114,23 @@ return {
     },
 
     {
-        'milanglacier/minuet-ai.nvim',
+        "milanglacier/minuet-ai.nvim",
         config = function()
-            require('configs/minuet')
+            require("configs/minuet")
         end,
         dependencies = {
-            'nvim-lua/plenary.nvim',
+            "nvim-lua/plenary.nvim",
         }
     },
+
+    {
+        "olimorris/codecompanion.nvim",
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+            "nvim-treesitter/nvim-treesitter",
+        },
+        config = function()
+            require("configs/codecompanion")
+        end
+    }
 }
