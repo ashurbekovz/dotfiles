@@ -18,8 +18,8 @@ map("n", "<leader>fb", "<cmd>FzfLua buffers<CR>")
 
 map("n", "<leader>u", vim.cmd.UndotreeToggle)
 
-map("n", "<C-n>", ":NvimTreeToggle<CR>")
-map('n', '<leader>e', ':NvimTreeFindFile<CR>')
+map("n", "<C-n>", "<cmd>NvimTreeToggle<CR>")
+map('n', '<leader>e', '<cmd>NvimTreeFindFile<CR>')
 
 local harpoon = require("harpoon")
 harpoon:setup()
@@ -42,7 +42,7 @@ map("n", "gr", vim.lsp.buf.references)
 map("n", "gs", vim.lsp.buf.signature_help)
 map("n", "gi", vim.lsp.buf.implementation)
 map("n", "gt", vim.lsp.buf.type_definition)
-map("n", "<leader>gw", vim.lsp.buf.document_symbol) -- show all symbols in document
+map("n", "<leader>gw", vim.lsp.buf.document_symbol)  -- show all symbols in document
 map("n", "<leader>gW", vim.lsp.buf.workspace_symbol) -- search symbol in document
 map("n", "<leader>r", vim.lsp.buf.rename)
 map("n", "<leader>=", vim.lsp.buf.format)
@@ -56,3 +56,4 @@ map("n", "<leader>cl", "<cmd>BufferConflictList<cr>")
 map("n", "<leader>tc", "<cmd>NvimTreeCollapse<CR>")
 
 map("n", "<leader>qc", "<cmd>CodeCompanionChat Toggle<CR>")
+map({ "n", "v" }, "<leader>qi", ":CodeCompanion")
