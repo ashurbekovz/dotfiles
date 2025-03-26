@@ -1,4 +1,13 @@
 require("codecompanion").setup({
+    display = {
+        chat = {
+            window = {
+                layout = "vertical",
+                position = "right",
+                width = 0.3,
+            },
+        },
+    },
     adapters = {
         my_local = function()
             return require("codecompanion.adapters").extend("openai_compatible", {
