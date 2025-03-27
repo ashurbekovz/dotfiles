@@ -4,7 +4,7 @@ require('minuet').setup{
         openai_compatible = {
             api_key = 'TERM',
             end_point = 'http://127.0.0.1:1234/v1/chat/completions',
-            model = 'gemma-3-12b-it',
+            model = 'qwen2.5-coder-14b-instruct',
             name = 'lmstudio',
             stream = true,
             optional = {
