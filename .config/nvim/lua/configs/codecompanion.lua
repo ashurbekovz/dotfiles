@@ -45,7 +45,7 @@ require("codecompanion").setup({
             adapter = "my_online",
         },
         inline = {
-            adapter = "my_local",
+            adapter = "my_online",
         },
     },
 })
