@@ -19,12 +19,12 @@ require("codecompanion").setup({
                 },
                 schema = {
                     model = {
-                        default = "gemma-3-12b-it",
+                        default = "unsloth/QwQ-32B-GGUF",
                     },
                 }
             })
         end,
-        my_online = function()
+        vsegpt = function()
             return require("codecompanion.adapters").extend("openai_compatible", {
                 env = {
                     url = "https://api.vsegpt.ru",
@@ -42,10 +42,10 @@ require("codecompanion").setup({
     },
     strategies = {
         chat = {
-            adapter = "my_online",
+            adapter = "vsegpt",
         },
         inline = {
-            adapter = "my_online",
+            adapter = "vsegpt",
         },
     },
 })

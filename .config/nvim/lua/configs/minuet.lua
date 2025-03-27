@@ -2,13 +2,13 @@ require('minuet').setup{
     provider = 'openai_compatible',
     provider_options = {
         openai_compatible = {
-            api_key = 'TERM',
-            end_point = 'http://127.0.0.1:1234/v1/chat/completions',
-            model = 'qwen2.5-coder-14b-instruct',
-            name = 'lmstudio',
+            api_key = 'VSEGPT_API_KEY',
+            end_point = 'https://api.vsegpt.ru/v1/chat/completions',
+            model = 'google/gemini-2.0-flash-lite-001',
+            name = 'vsegpt',
             stream = true,
             optional = {
-                max_tokens = 4000,
+                max_tokens = 10000,
                 top_p = 0.9,
                 provider = {
                     sort = 'throughput',
@@ -26,5 +26,6 @@ require('minuet').setup{
             dismiss = '<C-q>',
         },
     },
+    request_timeout = 5,
     notify='debug',
 }
