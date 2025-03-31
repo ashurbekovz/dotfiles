@@ -13,3 +13,11 @@ ls.add_snippets("go", {
         t({"", "}"})
     })
 })
+
+ls.add_snippets("go", {
+    s("ifnil", {
+        t("if err != nil {"),
+        t({"", "    return nil, fmt.Errorf(\"\")"}),
+        t({"", "}"}),
+    })
+})
