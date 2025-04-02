@@ -1,10 +1,5 @@
 local map = vim.keymap.set
 
-map('v', '<C-j>', ":m '>+1<CR>gv=gv")
-map('v', '<C-k>', ":m '<-2<CR>gv=gv")
-map('v', '<C-h>', "<gv")
-map('v', '<C-l>', ">gv")
-
 map("n", "<C-h>", "<cmd> TmuxNavigateLeft<CR>", { desc = "Window left" })
 map("n", "<C-l>", "<cmd> TmuxNavigateRight<CR>", { desc = "Window right" })
 map("n", "<C-j>", "<cmd> TmuxNavigateDown<CR>", { desc = "Window down" })
