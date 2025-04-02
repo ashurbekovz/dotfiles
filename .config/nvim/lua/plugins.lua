@@ -140,5 +140,7 @@ return {
         init = function()
             require("configs/lualine_codecompanion").init()
         end,
-    }
+    },
+
+    { 'echasnovski/mini.nvim', version = '*' },
 }
