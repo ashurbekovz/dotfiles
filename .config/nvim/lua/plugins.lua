@@ -143,8 +143,8 @@ return {
     },
 
     {
-        'echasnovski/mini.nvim',
-        version = '*',
+        "echasnovski/mini.nvim",
+        version = "*",
         config = function()
             require("configs/mini")
         end
