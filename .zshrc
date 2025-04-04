@@ -1,5 +1,6 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+stty -ixon
 export HISTSIZE=100000
 export SAVEHIST=100000
 export HISTFILE=~/.zhistory
@@ -43,6 +44,25 @@ function ctrl_f_search() {
 zle -N ctrl_f_search
 bindkey '^F' ctrl_f_search
 
+function cmd_repo() {
+  local selected
+  selected=$(
+    grep -v '^#' ~/.commands | 
+    fzf --delimiter='\|' \
+        --with-nth=2 \
+        --prompt="Command> " \
+        --preview='echo {1} | bat --color=always --language=sh --style=plain' |
+    cut -d'|' -f1 | 
+    sed 's/ *$//'
+  )
+
+  if [[ -n "$selected" ]]; then
+    LBUFFER+="$selected"
+    zle redisplay
+  fi
+}
+zle -N cmd_repo
+bindkey '^s' cmd_repo
 
 eval "$(oh-my-posh init zsh)"
 
