@@ -1,2 +1,3 @@
 docker exec -it <container_name_or_id> bash | docker exec it bash interactive session 
+docker kill $(docker ps -q) | docker kill all containers
 source ~/.zshrc | update source zshrc
