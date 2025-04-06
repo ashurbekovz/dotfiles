@@ -21,4 +21,6 @@ cmp.setup({
         { name = "buffer" },
         { name = "path" },
     }),
+
+    preselect = cmp.PreselectMode.None,
 })

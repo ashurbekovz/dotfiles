@@ -17,4 +17,9 @@ require('fzf-lua').setup({
             ['default'] = require('fzf-lua').actions.buf_edit,
         },
     },
+    keymap = {
+        fzf = {
+            ["tab"] = "toggle+up",
+        }
+    }
 })
