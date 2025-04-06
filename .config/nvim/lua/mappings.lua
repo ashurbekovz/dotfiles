@@ -52,4 +52,3 @@ map("n", "<leader>cl", "<cmd>BufferConflictList<cr>")
 map("n", "<leader>tc", "<cmd>NvimTreeCollapse<CR>")
 
 map("n", "<leader>qc", "<cmd>CodeCompanionChat Toggle<CR>")
-map({ "n", "v" }, "<leader>qi", ":CodeCompanion")
