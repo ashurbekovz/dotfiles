@@ -4,7 +4,7 @@ require('minuet').setup{
         openai_compatible = {
             api_key = 'VSEGPT_API_KEY',
             end_point = 'https://api.vsegpt.ru/v1/chat/completions',
-            model = 'google/gemini-2.0-flash-lite-001',
+            model = 'google/gemini-2.0-flash-001',
             name = 'vsegpt',
             stream = true,
             optional = {

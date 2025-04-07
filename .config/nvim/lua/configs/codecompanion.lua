@@ -34,7 +34,7 @@ require("codecompanion").setup({
                 },
                 schema = {
                     model = {
-                        default = "google/gemini-2.0-flash-001",
+                        default = "deepseek/deepseek-chat-0324-alt-fast",
                     },
                 }
             })
