@@ -17,7 +17,6 @@ macos_install:
 	brew install fzf
 	brew install repomix
 	brew install lazygit
-	make install_nix
 
 start_tabby:
 	tabby serve --device metal
@@ -29,5 +28,3 @@ install_langs:
 	brew install python3
 	brew install llvm
 
-install_nix:
-	sh <(curl -L https://nixos.org/nix/install) --yes
