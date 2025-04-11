@@ -19,7 +19,6 @@ ls.add_snippets("go", {
         t("if err != nil {"),
         t({"", "    return nil, fmt.Errorf(\""}),
         i(0),
-        t("\")"),
         t({"", "}"}),
     })
 })
