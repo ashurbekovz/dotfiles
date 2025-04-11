@@ -16,8 +16,8 @@ require('minuet').setup{
             },
         },
     },
-    throttle = 500,
-    debounce = 250,
+    throttle = 1000,
+    debounce = 500,
     virtualtext = {
         auto_trigger_ignore_ft = { '*' },
         keymap = {
