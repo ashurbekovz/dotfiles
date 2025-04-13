@@ -2,3 +2,4 @@ docker exec -it <container_name_or_id> bash | docker exec it bash interactive se
 docker kill $(docker ps -q) | docker kill all containers
 source ~/.zshrc | update source zshrc
 repomix <folder> -o <resfile>.md | repomix folder to llm
+source-file ~/.tmux.conf | update tmux config
