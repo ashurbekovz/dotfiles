@@ -65,6 +65,3 @@ zle -N cmd_repo
 bindkey '^s' cmd_repo
 
 eval "$(oh-my-posh init zsh)"
-
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/zamir/.lmstudio/bin"
