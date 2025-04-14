@@ -1,9 +1,24 @@
 require("nvim-tree").setup({
+    hijack_cursor = true,
+    actions = {
+        open_file = {
+            quit_on_open = true,
+        },
+    },
     sort = {
         sorter = "case_sensitive",
     },
     view = {
-        width = 35,
+        float = {
+            enable = true,
+            open_win_config = {
+                relative = "editor",
+                width = 120,
+                height = 33,
+                row = (vim.o.lines - 33) / 2 - 1,
+                col = (vim.o.columns - 120) / 2,
+            },
+        },
     },
     renderer = {
         special_files = {},
