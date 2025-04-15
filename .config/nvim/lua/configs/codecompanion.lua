@@ -2,9 +2,9 @@ require("codecompanion").setup({
     display = {
         chat = {
             window = {
-                layout = "vertical",
-                position = "right",
-                width = 0.3,
+                layout = "float",
+                height = 0.85,
+                width = 0.7,
             },
         },
     },
