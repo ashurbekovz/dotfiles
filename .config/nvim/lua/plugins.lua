@@ -142,6 +142,11 @@ return {
         end,
     },
 
+    -- {
+    --     "ashurbekovz/buffer-conflict.nvim",
+    --     branch = "feat/auto-save-and-update",
+    -- },
+
     {
         "echasnovski/mini.nvim",
         version = "*",
