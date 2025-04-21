@@ -17,6 +17,7 @@ macos_install:
 	brew install fzf
 	brew install repomix
 	brew install lazygit
+	brew install bruno
 
 start_tabby:
 	tabby serve --device metal
