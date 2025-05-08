@@ -1,4 +1,6 @@
-require('fzf-lua').setup({
+local fzflua = require('fzf-lua')
+
+fzflua.setup({
     winopts = {
         height = 1,
         width  = 1,
@@ -8,13 +10,13 @@ require('fzf-lua').setup({
     },
     actions = {
         files = {
-            ['default'] = require('fzf-lua').actions.file_edit,
+            ['default'] = fzflua.actions.file_edit,
         },
         grep = {
-            ['default'] = require('fzf-lua').actions.file_edit,
+            ['default'] = fzflua.actions.file_edit,
         },
         buffers = {
-            ['default'] = require('fzf-lua').actions.buf_edit,
+            ['default'] = fzflua.actions.buf_edit,
         },
     },
     keymap = {

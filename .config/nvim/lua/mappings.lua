@@ -7,9 +7,11 @@ map("n", "<C-k>", "<cmd> TmuxNavigateUp<CR>", { desc = "Window up" })
 
 map("n", "<leader>pv", "<cmd>Ex<CR>")
 
+local fzf_lua = require("fzf-lua")
 map("n", "<leader>ff", "<cmd>FzfLua files<CR>")
 map("n", "<leader>fg", "<cmd>FzfLua live_grep<CR>")
 map("n", "<leader>fb", "<cmd>FzfLua buffers<CR>")
+map("n", "<leader>fr", function() fzf_lua.resume() end)
 
 map("n", "<leader>u", vim.cmd.UndotreeToggle)
 
@@ -33,7 +35,6 @@ map("n", "<leader>r", vim.lsp.buf.rename)
 map("n", "gd", vim.lsp.buf.definition)
 map("n", "gD", vim.lsp.buf.declaration)
 map("n", "K", vim.lsp.buf.hover) -- information about symbol
-local fzf_lua = require("fzf-lua")
 map("n", "gr", function() fzf_lua.lsp_references() end)
 map("n", "gs", vim.lsp.buf.signature_help)
 map("n", "gi", vim.lsp.buf.implementation)
