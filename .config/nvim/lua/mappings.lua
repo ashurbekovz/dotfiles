@@ -47,11 +47,13 @@ map("n", "<leader>af", vim.lsp.buf.code_action)
 map("n", "<leader>ai", vim.lsp.buf.incoming_calls)
 map("n", "<leader>ao", vim.lsp.buf.outgoing_calls)
 
-map("n", "<leader>cd", "<cmd>BufferConflictDiff<cr>")
-map("n", "<leader>cl", "<cmd>BufferConflictList<cr>")
-
 map("n", "<leader>tc", "<cmd>NvimTreeCollapse<CR>")
 
 map("n", "<leader>qc", "<cmd>CodeCompanionChat Toggle<CR>")
 
 map("n", "<Esc><Esc>", "<cmd>nohlsearch<CR>")
+
+map("n", "<Up>", ":resize +5<enter>", { desc = "Increase current split height" })
+map("n", "<Down>", ":resize -5<enter>", { desc = "Decreate current split height" })
+map("n", "<Left>", ":vertical resize +5<enter>", { desc = "Increate current split width" })
+map("n", "<Right>", ":vertical resize -5<enter>", { desc = "Descrease current split width" })
