@@ -1,1 +1,3 @@
 .private_env
+.config/ettercap_gtk
+.config/wireshark
