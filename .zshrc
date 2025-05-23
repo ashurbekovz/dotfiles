@@ -9,6 +9,10 @@ setopt HIST_IGNORE_DUPS
 setopt EXTENDED_HISTORY
 
 alias n='nvim'
+export EDITOR=nvim
+autoload -Uz edit-command-line
+zle -N edit-command-line
+bindkey '^E' edit-command-line
 
 source ~/.public_env
 if [ -f ~/.private_env ]; then
