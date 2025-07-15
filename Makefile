@@ -18,9 +18,7 @@ macos_install:
 	brew install repomix
 	brew install lazygit
 	brew install bruno
-
-start_tabby:
-	tabby serve --device metal
+	brew install kitty
 
 install_langs:
 	brew install go@1.24
