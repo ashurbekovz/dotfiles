@@ -19,6 +19,7 @@ macos_install:
 	brew install lazygit
 	brew install bruno
 	brew install kitty
+	brew install ranger
 
 install_langs:
 	brew install go@1.24
