@@ -70,16 +70,6 @@ return {
     },
 
     {
-        "nvim-tree/nvim-tree.lua",
-        dependencies = {
-            "nvim-tree/nvim-web-devicons",
-        },
-        config = function()
-            require("configs/nvimtree")
-        end
-    },
-
-    {
         "nvim-lualine/lualine.nvim",
         dependencies = { "nvim-tree/nvim-web-devicons" },
         config = function()
@@ -160,4 +150,20 @@ return {
             require('leap').set_default_mappings()
         end
     },
+
+    {
+        "mikavilpas/yazi.nvim",
+        event = "VeryLazy",
+        dependencies = {
+            { "nvim-lua/plenary.nvim", lazy = true },
+        },
+        opts = {
+            open_for_directories = true,
+            yazi_floating_window_border = 'single',
+            floating_window_scaling_factor = 1,
+        },
+        init = function()
+            vim.g.loaded_netrwPlugin = 1
+        end,
+    }
 }

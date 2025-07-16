@@ -13,10 +13,10 @@ map("n", "<leader>fg", "<cmd>FzfLua live_grep<CR>")
 map("n", "<leader>fb", "<cmd>FzfLua buffers<CR>")
 map("n", "<leader>fr", function() fzf_lua.resume() end)
 
-map("n", "<leader>u", vim.cmd.UndotreeToggle)
+map("n", "<C-n>", "<cmd>Yazi<cr>")
+map("n", "<C-m>", "<cmd>Yazi cwd<cr>")
 
-map("n", "<C-n>", "<cmd>NvimTreeToggle<CR>")
-map("n", "<leader>e", "<cmd>NvimTreeFindFile<CR>")
+map("n", "<leader>u", vim.cmd.UndotreeToggle)
 
 local harpoon = require("harpoon")
 harpoon:setup()

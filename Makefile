@@ -18,7 +18,15 @@ macos_install:
 	brew install lazygit
 	brew install bruno
 	brew install kitty
-	brew install ranger
+	brew install yazi 
+	brew install ffmpeg 
+	brew install sevenzip 
+	brew install jq 
+	brew install poppler 
+	brew install fd 
+	brew install zoxide 
+	brew install resvg 
+	brew install imagemagick
 	brew install --cask font-iosevka
 
 install_langs:

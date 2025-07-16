@@ -9,6 +9,7 @@ setopt HIST_IGNORE_DUPS
 setopt EXTENDED_HISTORY
 
 alias n='nvim'
+alias y='yazi'
 export EDITOR=nvim
 autoload -Uz edit-command-line
 zle -N edit-command-line
