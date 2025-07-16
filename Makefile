@@ -10,7 +10,6 @@ macos_install:
 	brew install neovim
 	brew install --cask font-jetbrains-mono-nerd-font
 	brew install --cask nikitabobko/tap/aerospace
-	brew install --cask alacritty
 	brew install jandedobbeleer/oh-my-posh/oh-my-posh
 	brew install wget
 	brew install bat
