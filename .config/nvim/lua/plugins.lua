@@ -41,7 +41,10 @@ return {
 
     "williamboman/mason-lspconfig.nvim",
 
-    "christoomey/vim-tmux-navigator",
+    {
+        "knubie/vim-kitty-navigator",
+        build = "cp ./*.py ~/.config/kitty/",
+    },
 
     {
         "catppuccin/nvim",
