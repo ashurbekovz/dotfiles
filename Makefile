@@ -4,11 +4,10 @@ git:
 
 macos_install:
 	make install_langs
+	brew install --cask font-iosevka
 	brew install stow
 	brew install ripgrep
-	brew install tmux
 	brew install neovim
-	brew install --cask font-jetbrains-mono-nerd-font
 	brew install --cask nikitabobko/tap/aerospace
 	brew install jandedobbeleer/oh-my-posh/oh-my-posh
 	brew install wget
@@ -27,7 +26,6 @@ macos_install:
 	brew install zoxide 
 	brew install resvg 
 	brew install imagemagick
-	brew install --cask font-iosevka
 
 install_langs:
 	brew install go@1.24
