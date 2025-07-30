@@ -28,7 +28,6 @@ macos_install:
 	brew install resvg 
 	brew install imagemagick
 	brew install --cask font-iosevka
-	brew install qutebrowser
 
 install_langs:
 	brew install go@1.24
