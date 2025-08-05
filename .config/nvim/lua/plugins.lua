@@ -29,6 +29,7 @@ return {
 
     {
         "neovim/nvim-lspconfig",
+        version = "^0.1.7",
         config = function()
             require("configs/lsp")
         end
@@ -36,10 +37,14 @@ return {
 
     {
         "williamboman/mason.nvim",
+        version = "^1.8.0",
         build = ":MasonUpdate",
     },
 
-    "williamboman/mason-lspconfig.nvim",
+    {
+        "williamboman/mason-lspconfig.nvim",
+        version = "^1.20.0",
+    },
 
     {
         "knubie/vim-kitty-navigator",
