@@ -18,3 +18,9 @@ Configs that I use for my daily tasks.
 
 - Run `:MasonInstallAll` command after lazy.nvim finishes downloading plugins.
 - `Lazy sync` command for update.
+
+## Python
+
+- `mkdir ~/.virtualenvs`
+- `python -m venv ~/.virtualenvs/neovim`
+- `source ~/.virtualenvs/neovim/bin/activate`
