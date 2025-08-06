@@ -5,3 +5,5 @@ repomix <folder> -o <res>.md | repomix folder to llm
 tmux source-file ~/.tmux.conf | update tmux config
 zip -r <res>.zip <folder> | zip archive folder
 kubectl scale deployment <deployment> --replicas=<num> -n <namespace> | kubectl change replicas number in deployment
+poetry install --no-root | install poetry deps
+eval $(poetry env activate) | run poetry virualenv

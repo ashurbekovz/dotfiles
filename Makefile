@@ -32,5 +32,6 @@ install_langs:
 	brew install golangci-lint
 	brew install npm
 	brew install python3
+	brew install pyenv
 	brew install llvm
 
