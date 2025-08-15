@@ -54,8 +54,6 @@ map("n", "<leader>ao", vim.lsp.buf.outgoing_calls)
 
 map("n", "<leader>tc", "<cmd>NvimTreeCollapse<CR>")
 
-map("n", "<leader>qc", "<cmd>CodeCompanionChat Toggle<CR>")
-
 map("n", "<Esc><Esc>", "<cmd>nohlsearch<CR>")
 
 map("n", "<Up>", ":resize +5<enter>", { desc = "Increase current split height" })

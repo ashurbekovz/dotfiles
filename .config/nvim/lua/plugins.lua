@@ -115,31 +115,6 @@ return {
     },
 
     {
-        "milanglacier/minuet-ai.nvim",
-        config = function()
-            require("configs/minuet")
-        end,
-        dependencies = {
-            "nvim-lua/plenary.nvim",
-        }
-    },
-
-    {
-        "olimorris/codecompanion.nvim",
-        dependencies = {
-            "nvim-lua/plenary.nvim",
-            "nvim-treesitter/nvim-treesitter",
-            "nvim-lualine/lualine.nvim",
-        },
-        config = function()
-            require("configs/codecompanion")
-        end,
-        init = function()
-            require("configs/lualine_codecompanion").init()
-        end,
-    },
-
-    {
         "echasnovski/mini.nvim",
         version = "*",
         config = function()
