@@ -13,8 +13,8 @@ map("n", "<leader>fg", "<cmd>FzfLua live_grep<CR>")
 map("n", "<leader>fb", "<cmd>FzfLua buffers<CR>")
 map("n", "<leader>fr", function() fzf_lua.resume() end)
 
-map("n", "<C-n>", "<cmd>Yazi<cr>")
-map("n", "<C-m>", "<cmd>Yazi cwd<cr>")
+map("n", "<C-n>", "<cmd>Rex<cr>")
+map("n", "<C-m>", "<cmd>Ntree<cr>")
 
 map("n", "<leader>u", vim.cmd.UndotreeToggle)
 
@@ -60,3 +60,4 @@ map("n", "<Up>", ":resize +5<enter>", { desc = "Increase current split height" }
 map("n", "<Down>", ":resize -5<enter>", { desc = "Decreate current split height" })
 map("n", "<Left>", ":vertical resize +5<enter>", { desc = "Increate current split width" })
 map("n", "<Right>", ":vertical resize -5<enter>", { desc = "Descrease current split width" })
+

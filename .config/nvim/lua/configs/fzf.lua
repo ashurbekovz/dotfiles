@@ -19,7 +19,6 @@ fzflua.setup({
         },
         buffers = {
             ['default'] = fzflua.actions.buf_edit,
-            ['default'] = fzflua.actions.buf_edit,
         },
     },
     keymap = {
