@@ -34,4 +34,3 @@ vim.opt.cmdheight = 0
 vim.opt.termguicolors = true
 
 vim.g.netrw_banner = 0
-

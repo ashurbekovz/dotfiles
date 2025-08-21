@@ -60,4 +60,3 @@ map("n", "<Up>", ":resize +5<enter>", { desc = "Increase current split height" }
 map("n", "<Down>", ":resize -5<enter>", { desc = "Decreate current split height" })
 map("n", "<Left>", ":vertical resize +5<enter>", { desc = "Increate current split width" })
 map("n", "<Right>", ":vertical resize -5<enter>", { desc = "Descrease current split width" })
-
