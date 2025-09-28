@@ -13,7 +13,15 @@ map("n", "<leader>fg", "<cmd>FzfLua live_grep<CR>")
 map("n", "<leader>fb", "<cmd>FzfLua buffers<CR>")
 map("n", "<leader>fr", function() fzf_lua.resume() end)
 
-map("n", "<C-n>", "<cmd>Rex<cr>")
+vim.keymap.set("n", "<C-n>", function()
+  local status, err = pcall(function()
+    vim.cmd("Rex")
+  end)
+
+  if not status then
+    vim.cmd("Ex")
+  end
+end)
 map("n", "<C-m>", "<cmd>Ntree<cr>")
 
 map("n", "<leader>u", vim.cmd.UndotreeToggle)

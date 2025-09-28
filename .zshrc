@@ -70,5 +70,3 @@ zle -N cmd_repo
 bindkey '^s' cmd_repo
 
 eval "$(oh-my-posh init zsh)"
-
-. "$HOME/.local/bin/env"
