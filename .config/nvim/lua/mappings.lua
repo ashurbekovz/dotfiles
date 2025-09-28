@@ -68,3 +68,26 @@ map("n", "<Up>", ":resize +5<enter>", { desc = "Increase current split height" }
 map("n", "<Down>", ":resize -5<enter>", { desc = "Decreate current split height" })
 map("n", "<Left>", ":vertical resize +5<enter>", { desc = "Increate current split width" })
 map("n", "<Right>", ":vertical resize -5<enter>", { desc = "Descrease current split width" })
+
+map("n", "d", '"_d', { desc = "Delete without yanking" })
+map("n", "D", '"_D', { desc = "Delete until end of line forward without yanking" })
+map("v", "d", '"_d', { desc = "Delete without yanking" })
+map("n", "<leader>d", "d", { desc = "Delete with yanking" })
+map("n", "<leader>D", "D", { desc = "Delete until end line forward with yanking" })
+map("v", "<leader>d", "d", { desc = "Delete with yanking" })
+
+map("n", "x", '"_x', { desc = "Cut symbol under cursor without yanking" })
+map("n", "X", '"_X', { desc = "Cut symbol before cursor without yanking" })
+map("v", "X", "<nop>")
+map("v", "x", '"_x', { desc = "Cut without yanking" })
+map("n", "<leader>x", "x", { desc = "Cut symbol under cursor with yanking" })
+map("v", "<leader>x", "x", { desc = "Cut with yanking" })
+
+map("n", "c", '"_c', { desc = "Cut without yanking and go to insert mode" })
+map("n", "C", '"_C', { desc = "Cut until end of line without yanking and go to insert mode" })
+map("v", "c", '"_c', { desc = "Cut without yanking and go to insert mode" })
+map("n", "<leader>c", "c", { desc = "Cut with yanking and go to insert mode" })
+map("n", "<leader>C", "C", { desc = "Cut until end of line with yanking and go to insert mode" })
+map("v", "<leader>c", "c", { desc = "Cut with yanking and go to insert mode" })
+
+map("v", "p", '"_dP', { desc = "Paste without yanking selected text" })
