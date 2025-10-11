@@ -1,123 +1,104 @@
 return {
-    {
-        "nvim-lua/plenary.nvim",
-        lazy = false,
-    },
+  {
+    "williamboman/mason.nvim",
+    build = ":MasonUpdate",
+  },
+  {
+    "williamboman/mason-lspconfig.nvim",
+  },
 
-    {
-        "hrsh7th/nvim-cmp",
-        dependencies = {
-            "hrsh7th/cmp-nvim-lsp",
-            "hrsh7th/cmp-buffer",
-            "hrsh7th/cmp-path",
-            "hrsh7th/cmp-cmdline",
-            "saadparwaiz1/cmp_luasnip"
-        },
-        config = function()
-            require("configs/cmp")
-        end
-    },
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
+    config = function()
+      require("configs.catppuccin")
+    end,
+  },
+  {
+    "nvim-lualine/lualine.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    config = function()
+      require("configs.lualine")
+      require("fzf-lua").register_ui_select()
+    end,
+  },
 
-    {
-        "nvim-treesitter/nvim-treesitter",
-        build = ":TSUpdate",
-        config = function()
-            require("configs/treesitter")
-        end,
-    },
+  {
+    "ibhagwan/fzf-lua",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    config = function()
+      require("configs.fzf")
+    end,
+  },
+  {
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    dependencies = { "nvim-lua/plenary.nvim" },
+  },
+  {
+    "knubie/vim-kitty-navigator",
+    build = "cp ./*.py ~/.config/kitty/",
+  },
 
-    {
-        "neovim/nvim-lspconfig",
-        version = "^0.1.7",
-        config = function()
-            require("configs/lsp")
-        end
-    },
+  {
+    "echasnovski/mini.nvim",
+    version = "*",
+    config = function()
+      require("configs.mini")
+    end,
+  },
+  {
+    "ggandor/leap.nvim",
+    dependencies = { "tpope/vim-repeat" },
+    lazy = false,
+    config = function()
+      require("leap").set_default_mappings()
+    end,
+  },
 
-    {
-        "williamboman/mason.nvim",
-        version = "^1.8.0",
-        build = ":MasonUpdate",
-    },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate",
+    config = function()
+      require("configs.treesitter")
+    end,
+  },
 
-    {
-        "williamboman/mason-lspconfig.nvim",
-        version = "^1.20.0",
+  {
+    "hrsh7th/nvim-cmp",
+    dependencies = {
+      "hrsh7th/cmp-nvim-lsp",
+      "hrsh7th/cmp-buffer",
+      "hrsh7th/cmp-path",
+      "hrsh7th/cmp-cmdline",
+      "saadparwaiz1/cmp_luasnip",
     },
+    config = function()
+      require("configs.cmp")
+    end,
+  },
 
-    {
-        "knubie/vim-kitty-navigator",
-        build = "cp ./*.py ~/.config/kitty/",
-    },
+  {
+    "neovim/nvim-lspconfig",
+    config = function()
+      require("configs.lsp")
+    end,
+  },
 
-    {
-        "catppuccin/nvim",
-        name = "catppuccin",
-        priority = 1000,
-        config = function()
-            require("configs/catppuccin")
-        end
-    },
+  {
+    "mhartington/formatter.nvim",
+    config = function()
+      require("configs.formatter")
+    end,
+  },
 
-    {
-        "ibhagwan/fzf-lua",
-        dependencies = { "nvim-tree/nvim-web-devicons" },
-        config = function()
-            require("configs/fzf")
-        end
-    },
-
-    {
-        "mbbill/undotree",
-        config = function()
-            vim.g.undotree_WindowLayout = 3
-            vim.g.undotree_SplitWidth = 50
-        end
-    },
-
-    {
-        "nvim-lualine/lualine.nvim",
-        dependencies = { "nvim-tree/nvim-web-devicons" },
-        config = function()
-            require("configs/lualine")
-            require("fzf-lua").register_ui_select()
-        end
-    },
-
-    {
-        "ThePrimeagen/harpoon",
-        branch = "harpoon2",
-        dependencies = { "nvim-lua/plenary.nvim" }
-    },
-
-    {
-        "MeanderingProgrammer/render-markdown.nvim",
-        dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-tree/nvim-web-devicons" },
-    },
-
-    {
-        "mhartington/formatter.nvim",
-        config = function()
-            require("configs/formatter")
-        end
-    },
-
-    {
-        "echasnovski/mini.nvim",
-        version = "*",
-        config = function()
-            require("configs/mini")
-        end
-    },
-
-    {
-        "ggandor/leap.nvim",
-        lazy = false,
-        dependencies = {
-            "tpope/vim-repeat",
-        },
-        config = function()
-            require('leap').set_default_mappings()
-        end
-    },
+  {
+    "mbbill/undotree",
+    config = function()
+      vim.g.undotree_WindowLayout = 3
+      vim.g.undotree_SplitWidth = 50
+    end,
+  },
 }
+
