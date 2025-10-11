@@ -35,11 +35,6 @@ if [ -f ~/.private_env ]; then
     source ~/.private_env
 fi
 
-# --- Oh My Posh (only if not Apple Terminal) ---
-if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
-    eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/zen.toml)"
-fi
-
 # --- FZF configuration ---
 source <(fzf --zsh)
 export FZF_DEFAULT_OPTS="--color=fg:#cad3f5,bg:#24273a,hl:#f5e0dc,fg+:#cad3f5,bg+:#1e2030,hl+:#f5e0dc,info:#a6e3a1,prompt:#f5e0dc,spinner:#a6e3a1,pointer:#f5e0dc,marker:#f5e0dc,header:#a6e3a1"
@@ -65,6 +60,7 @@ function cmd_repo() {
 zle -N cmd_repo
 bindkey '^s' cmd_repo
 
-# --- Default Oh My Posh init (fallback/default config) ---
-eval "$(oh-my-posh init zsh)"
-
+# --- Oh My Posh (only if not Apple Terminal) ---
+if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
+    eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/zen.toml)"
+fi

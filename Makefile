@@ -26,6 +26,7 @@ macos_install:
 	brew install zoxide 
 	brew install resvg 
 	brew install imagemagick
+	brew install opencode
 
 install_langs:
 	brew install go@1.24
