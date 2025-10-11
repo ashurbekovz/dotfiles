@@ -5,24 +5,11 @@ map("n", "<C-l>", "<cmd> KittyNavigateRight<CR>", { desc = "Window right" })
 map("n", "<C-j>", "<cmd> KittyNavigateDown<CR>", { desc = "Window down" })
 map("n", "<C-k>", "<cmd> KittyNavigateUp<CR>", { desc = "Window up" })
 
-map("n", "<leader>pv", "<cmd>Ex<CR>")
-
 local fzf_lua = require("fzf-lua")
 map("n", "<leader>ff", "<cmd>FzfLua files<CR>")
 map("n", "<leader>fg", "<cmd>FzfLua live_grep<CR>")
 map("n", "<leader>fb", "<cmd>FzfLua buffers<CR>")
 map("n", "<leader>fr", function() fzf_lua.resume() end)
-
-vim.keymap.set("n", "<C-n>", function()
-  local status, err = pcall(function()
-    vim.cmd("Rex")
-  end)
-
-  if not status then
-    vim.cmd("Ex")
-  end
-end)
-map("n", "<C-m>", "<cmd>Ntree<cr>")
 
 map("n", "<leader>u", vim.cmd.UndotreeToggle)
 
@@ -36,14 +23,12 @@ map("n", "<leader>j1", function() harpoon:list():select(1) end)
 map("n", "<leader>j2", function() harpoon:list():select(2) end)
 map("n", "<leader>j3", function() harpoon:list():select(3) end)
 map("n", "<leader>j4", function() harpoon:list():select(4) end)
-map("n", "<leader>j5", function() harpoon:list():select(5) end)
-map("n", "<leader>j6", function() harpoon:list():select(6) end)
-map("n", "<leader>j7", function() harpoon:list():select(7) end)
-map("n", "<leader>j8", function() harpoon:list():select(8) end)
-map("n", "<leader>j9", function() harpoon:list():select(9) end)
+map("n", "<leader>jq", function() harpoon:list():select(5) end)
+map("n", "<leader>jw", function() harpoon:list():select(6) end)
+map("n", "<leader>je", function() harpoon:list():select(7) end)
+map("n", "<leader>jr", function() harpoon:list():select(8) end)
 
 map("n", "<leader>sd", vim.diagnostic.open_float)
-
 map("n", "<leader>r", vim.lsp.buf.rename)
 map("n", "gd", vim.lsp.buf.definition)
 map("n", "gD", vim.lsp.buf.declaration)
@@ -60,7 +45,7 @@ map("n", "<leader>af", vim.lsp.buf.code_action)
 map("n", "<leader>ai", vim.lsp.buf.incoming_calls)
 map("n", "<leader>ao", vim.lsp.buf.outgoing_calls)
 
-map("n", "<leader>tc", "<cmd>NvimTreeCollapse<CR>")
+map("n", "<C-n>", "<cmd>NvimTreeToggle<CR>")
 
 map("n", "<Esc><Esc>", "<cmd>nohlsearch<CR>")
 
