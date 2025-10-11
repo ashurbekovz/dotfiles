@@ -11,7 +11,6 @@ return {
             "hrsh7th/cmp-buffer",
             "hrsh7th/cmp-path",
             "hrsh7th/cmp-cmdline",
-            "L3MON4D3/LuaSnip",
             "saadparwaiz1/cmp_luasnip"
         },
         config = function()
@@ -100,17 +99,6 @@ return {
         "mhartington/formatter.nvim",
         config = function()
             require("configs/formatter")
-        end
-    },
-
-    {
-        "L3MON4D3/LuaSnip",
-        version = "v2.*",
-        dependencies = {
-            "saadparwaiz1/cmp_luasnip",
-        },
-        config = function()
-            require("configs/luasnip")
         end
     },
 

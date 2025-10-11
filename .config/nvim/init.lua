@@ -9,7 +9,6 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins")
 require "options"
-require "mappings_pre"
 
 vim.schedule(function()
     require "autocmd"
