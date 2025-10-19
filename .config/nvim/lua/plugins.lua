@@ -1,6 +1,6 @@
 return {
     {
-        "williamboman/mason.nvim",
+        "mason-org/mason.nvim",
         build = ":MasonUpdate",
     },
 
@@ -81,6 +81,10 @@ return {
         config = function()
             require("configs.lsp")
         end,
+        dependencies = {
+            "mason-org/mason.nvim",
+            "mason-org/mason-lspconfig.nvim",
+        }
     },
 
     {
