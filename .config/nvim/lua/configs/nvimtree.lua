@@ -1,5 +1,27 @@
+local function on_attach(bufnr)
+    local api = require("nvim-tree.api")
+
+    local function edit_or_open()
+        local node = api.tree.get_node_under_cursor()
+        if node.nodes ~= nil then
+            api.node.open.edit()
+        else
+            api.node.open.edit()
+            api.tree.close()
+        end
+    end
+
+    local function opts(desc)
+      return { desc = "nvim-tree: " .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
+    end
+
+    api.config.mappings.default_on_attach(bufnr)
+    vim.keymap.set("n", "l", edit_or_open, opts("edit_or_open"))
+end
+
 require("nvim-tree").setup({
     hijack_cursor = true,
+    on_attach = on_attach,
     actions = {
         open_file = {
             quit_on_open = true,
