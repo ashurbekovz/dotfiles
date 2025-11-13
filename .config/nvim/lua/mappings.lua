@@ -75,4 +75,4 @@ map("n", "<leader>c", "c", { desc = "Cut with yanking and go to insert mode" })
 map("n", "<leader>C", "C", { desc = "Cut until end of line with yanking and go to insert mode" })
 map("v", "<leader>c", "c", { desc = "Cut with yanking and go to insert mode" })
 
-map("v", "p", '"_dP', { desc = "Paste without yanking selected text" })
+map("v", "p", '"_dp', { desc = "Paste without yanking selected text" })
